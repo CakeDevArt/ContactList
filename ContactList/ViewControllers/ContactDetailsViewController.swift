@@ -8,11 +8,11 @@
 import UIKit
 
 class ContactDetailsViewController: UIViewController {
-    var contact: Person!
     
     @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     
+    var contact: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,4 @@ class ContactDetailsViewController: UIViewController {
         phoneNumberLabel.text = contact.phoneNumber
         emailLabel.text = contact.email
     }
-    
-
- 
 }
